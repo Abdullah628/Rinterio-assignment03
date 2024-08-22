@@ -9,17 +9,96 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Rinterio</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+      body{
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "rgba(171, 239, 95, 1)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
+
   <body>
     <header>
+      <nav class="container mx-auto w-11/12">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
 
+            <a class="btn btn-ghost text-xl"
+              ><img
+                class="w-5 h-5 text-[#ABEF5F]"
+                src="./assets/arrow.png"
+                alt="logo"
+              />Rinterio</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[#494949]">
+                <li><a>Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-4">
+            <a class="border-2 p-2 rounded-full bg-[#FFFFFF] w-11 text-center" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="border-2 p-2 rounded-full bg-[#FFFFFF] w-11 text-center" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="btn bg-[#ABEF5F] rounded-full font-bold">Book Consult</a>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
 
-    </main>
-    <footer>
-        
-    </footer>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
