@@ -23,19 +23,12 @@
       body {
         font-family: "Manrope", sans-serif;
       }
+
+      .form-bg {
+        background-image: url("./assets/bg.jpg");
+        background-size: cover;
+      }
     </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "primary-color": "rgba(171, 239, 95, 1)",
-            },
-          },
-        },
-      };
-    </script>
   </head>
 
   <body>
@@ -292,7 +285,8 @@
         <div class="hero-content text-center flex-col sm:w-full">
           <div class="max-w-4xl flex flex-col mx-auto space-y-3">
             <p class="rounded-full bg-[#ABEF5F] w-1/4 mx-auto p-2">
-              <i class="fa-solid fa-arrow-right mr-2"></i>Explore our Latest works
+              <i class="fa-solid fa-arrow-right mr-2"></i>Explore our Latest
+              works
             </p>
             <h2 class="text-4xl font-bold">Our Latest Protfolio</h2>
             <p class="py-6">
@@ -303,7 +297,6 @@
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-
             <div
               class="card text-[#494949] bg-[#FFFFFF] shadow-lg shadow-gray-200/50 text-primary-content text-left col-span-2"
             >
@@ -312,39 +305,34 @@
 
                 <div class="flex flex-col gap-4">
                   <h4 class="text-xl font-extrabold">Commercial</h4>
-                <p class="text-base">
-                  The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
-                </p>
-                <a class="font-bold flex gap-2" href="#">View details <img class="w-4 h-4" src="./assets/arrow.png" alt=""></a>
+                  <p class="text-base">
+                    The barn house captivates with its blend of rustic charm and
+                    modern. The barn house captivates with its blend of rustic
+                    charm and modern .
+                  </p>
+                  <a class="font-bold flex gap-2" href="#"
+                    >View details
+                    <img class="w-4 h-4" src="./assets/arrow.png" alt=""
+                  /></a>
                 </div>
               </div>
             </div>
 
             <div
-              class="card text-[#494949] bg-[#ffff] shadow-lg shadow-gray-200/50 text-primary-content text-left "
+              class="card text-[#494949] bg-[#ffff] shadow-lg shadow-gray-200/50 text-primary-content text-left"
             >
               <div class="card-body flex flex-col gap-1">
-                <img
-                  class="w-full"
-                  src="./assets/img2.png"
-                  alt="commercial"
-                />
+                <img class="w-full" src="./assets/img2.png" alt="commercial" />
               </div>
             </div>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
-            
-
             <div
               class="card text-[#494949] bg-[#ffff] shadow-lg shadow-gray-200/50 text-primary-content text-left w-full"
             >
               <div class="card-body pt-10">
-                <img
-                  class="w-full"
-                  src="./assets/img3.png"
-                  alt="commercial"
-                />
+                <img class="w-full" src="./assets/img3.png" alt="commercial" />
               </div>
             </div>
 
@@ -356,10 +344,15 @@
 
                 <div class="flex flex-col gap-4">
                   <h4 class="text-xl font-extrabold">Commercial</h4>
-                <p class="text-base">
-                  The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
-                </p>
-                <a class="font-bold flex gap-2" href="#">View details <img class="w-4 h-4" src="./assets/arrow.png" alt=""></a>
+                  <p class="text-base">
+                    The barn house captivates with its blend of rustic charm and
+                    modern. The barn house captivates with its blend of rustic
+                    charm and modern .
+                  </p>
+                  <a class="font-bold flex gap-2" href="#"
+                    >View details
+                    <img class="w-4 h-4" src="./assets/arrow.png" alt=""
+                  /></a>
                 </div>
               </div>
             </div>
@@ -368,20 +361,67 @@
               class="card text-[#494949] bg-[#ffff] shadow-lg shadow-gray-200/50 text-primary-content text-left w-full"
             >
               <div class="card-body">
-                <img
-                  class="w-full "
-                  src="./assets/img5.png"
-                  alt="commercial"
-                />
+                <img class="w-full" src="./assets/img5.png" alt="commercial" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- latest portfolio section start -->
+      <!-- latest portfolio section end -->
+
+      <!-- discuss next project section start  -->
+      <div class="form-bg">
+        <div class=" container mx-auto w-11/12 py-10">
+          <div class="hero-content text-center flex-col">
+            <div class="w-full flex flex-col mx-auto space-y-3">
+              <p class="rounded-full bg-[#ABEF5F] w-1/4 mx-auto p-2">
+                <i class="fa-solid fa-arrow-right mr-2"></i>Let’s Connect
+              </p>
+              <h2 class="text-4xl font-bold">Let’s Discuss Next Project</h2>
+              <p class="py-6 w-2/3 mx-auto">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+            </div>
+
+            <form class="grid grid-cols-2 gap-4" >
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="input rounded-full w-full max-w-xs"
+              />
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="input rounded-full w-full max-w-xs"
+              />
+              <input
+                type="text"
+                placeholder="Phone Number*"
+                class="input rounded-full w-full max-w-xs"
+              />
+              <input
+                type="text"
+                placeholder="Email Number*"
+                class="input rounded-full w-full max-w-xs"
+              />
+              <textarea
+                placeholder="Write your message here"
+                class="textarea rounded-xl col-span-2 textarea-lg w-full "
+              ></textarea>
+              <a class="btn bg-[#ABEF5F] col-span-2 rounded-full font-bold"
+                >Send Mail</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- discuss next project section end  -->
     </main>
 
-    <footer></footer>
+    <footer>
+
+      
+    </footer>
   </body>
 </html>

@@ -1,10 +1,10 @@
-// tailwind.config = {
-//     theme: {
-//       extend: {
-//         colors: {
-//           clifford: '#da373d',
-//           'primary-color': 'rgba(171, 239, 95, 1)',
-//         }
-//       }
-//     }
-//   }
+module.exports = {
+    theme: {
+      extend: {
+        backgroundImage: {
+          'form-bg': "url('./assets/bg.jpg')",
+          'footer-texture': "url('/img/footer-texture.png')",
+        }
+      }
+    }
+  }
